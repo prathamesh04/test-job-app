@@ -1,0 +1,26 @@
+@use "./variables" as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .links {
+    display: flex;
+    gap: 25px;
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
